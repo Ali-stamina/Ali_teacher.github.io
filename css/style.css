@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+   font-family: Verdana, Geneva, sans-serif;
+    background-color: rgb(90, 104, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 110px; 
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #80abe8e7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-container a {
+    margin: 0 15px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: rgb(80, 49, 13);
+    font-size: 30px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container, .diploma, .services, .calendar, .container-blog {
+    background-color: white;
+    width: 80%;
+    margin: 5px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.calendar{
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: flex-start;
+    gap: 30px;
+     
+   
+}
+
+.container img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {font-size: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    text-align: left;
+padding-bottom: 20px;
+}
+
+.text-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+h1{
+    color: #f40303;
+}
+h2{ text-align: center;
+    color: #071ecac5;
+}
+.diploma {
+    padding: 20px;
+}
+
+.diploma h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 520px;
+    height: 720px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.services pre{ text-align: center;
+    font-size: 20px;
+font-family: Verdana, Geneva, sans-serif;
+}
+
+footer {width: 78%;
+    height:88px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #031ff749;
+    color: white;
+    font-size: 30px;
+ border-radius: 8px;
+}
+footer .cont{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+footer a {
+    padding-right: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.social-links {
+    margin: 10px 0;
+}
+
+.social-icon {
+    color: white;      /* Цвет иконок */
+    font-size: 24px;   /* Размер иконок */
+    margin: 0 10px;    /* Отступ между иконками */
+    transition: 0.3s;  /* Плавное изменение цвета */
+}
+
+.social-icon:hover {
+    color: #ff5722;    /* Цвет при наведении (оранжевый) */
+}
+footer p{
+    padding-top: 30px;
+    font-size: 10px;
+}
+.blog-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.post-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.back-link {
+  margin-top: 2rem;
+}
+.article-content {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-content h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.article-content h3 {
+    color: #34495e;
+    margin-top: 25px;
+}
+
+.article-content h4 {
+    color: #7e10c7;
+    margin-top: 20px;
+}
+
+.article-content ul {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.article-content li {
+    margin-bottom: 8px;
+}
+
+.article-content q {
+    font-style: italic;
+    color: #2b15b8;
+}
+
+.script {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+}
+
+.script p {
+    margin: 8px 0;
+}
+
+.article-content a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.article-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 150px; 
+    }
+    
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .container img {
+        width: 100%;
+        order: 1;
+    }
+    
+    .container .text {
+        order: 2;
+    }
+    
+    .swiper {
+        height: 400px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 300px;
+    }
+    
+    .nav-container a {
+        font-size: 24px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .container img {
+        width: 100%;
+        order: 1;
+    }
+    
+    .text {
+        order: 2;
+    }
+}
+@media (max-width: 600px) {
+    .social-icon {
+        font-size: 20px;  
+    }
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  nav.active {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media (max-width: 480px) {
+  .nav-container a {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+  
+  .text-content, .services pre {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .container img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .social-links {
+    margin-top: 15px;
+  }
+  
+  footer p {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .swiper {
+    height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .calendar iframe {
+    height: 400px;
+  }
+}
+a, button {
+  min-width: 44px;
+  min-height: 44px;
+}
+@media (max-width: 480px) {
+  body {
+    padding-top: 80px;
+  }
+  
+  .container, .diploma, .services, .calendar {
+    width: 95%;
+    padding: 10px;
+  }
+}
